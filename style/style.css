@@ -1,9 +1,80 @@
 @import 'fonts.css';
 
+/* root */
+
 :root {
     --f400: 'R400';
     --f900: 'R900';
     --fi700: 'RI700';
     --fs700: 'RS700';
+    --m-color: #7177F1;
+    --dark-text: #323232;
+    --light-text: #ffffff;
 }
 
+.index-body {
+    font-family: var(--f400);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    color: var(--m-color);
+    font-family: var(--fs700);
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+
+.button {
+    display: inline-block;
+    background: var(--m-color);
+    color: var(--light-text);
+    padding: 12px 58px 13px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 53px;
+    border-radius: 8px;
+}
+
+/* nav */
+
+.nav-position {
+    padding: 18px 0 17px;
+}
+
+.nav-collapse {
+    width: max-content;
+}
+
+.nav__link {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: color 250ms, background 250ms;
+}
+
+.nav__link:hover {
+    color: var(--light-text);
+    background: var(--m-color);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+}
+
+.nav__icon {
+    font-size: 20px;
+}
+
+/* Media */
+
+@media (max-width: 991px) {
+    .nav-collapse {
+        width: 100%;
+    }
+}
