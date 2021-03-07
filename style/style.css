@@ -39,7 +39,7 @@ ul {
     padding: 12px 58px 13px;
     text-transform: uppercase;
     font-size: 18px;
-    line-height: 53px;
+    line-height: 18px;
     border-radius: 8px;
 }
 
@@ -59,6 +59,7 @@ ul {
     padding: 10px 20px;
     border-radius: 8px;
     transition: color 250ms, background 250ms;
+    font-family: var(--f400);
 }
 
 .nav__link:hover {
@@ -69,6 +70,36 @@ ul {
 
 .nav__icon {
     font-size: 20px;
+}
+
+/* Slider */
+
+.carousel [data-target] {
+    background: #828282;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 15px;
+    border: 0;
+}
+
+
+.carousel__parent {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.carousel__parent .button {
+    margin: auto;
+    display: block;
+    width: max-content;
+}
+
+.carousel__brands {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 /* Media */
