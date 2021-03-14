@@ -14,6 +14,7 @@
 
 .index-body {
     font-family: var(--f400);
+    background: url(../img/bg.png)
 }
 
 a {
@@ -41,6 +42,14 @@ ul {
     font-size: 18px;
     line-height: 18px;
     border-radius: 8px;
+    transition: background 250ms, color 250ms;
+    text-align: center;
+}
+
+.button:hover {
+    background: var(--light-text);
+    color: var(--m-color);
+    box-shadow: 0 0 15px 0 var(--m-color);
 }
 
 /* nav */
@@ -106,11 +115,98 @@ ul {
     font-size: 24px;
     line-height: 22px;
     margin-bottom: 10px;
-    font-family: var(--fs700); 
+    font-family: var(--fs700);
 }
 
 .carousel__title_big {
     margin-bottom: 25px;
+}
+
+.carousel__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel__item-text {
+    margin-top: 15px;
+    font-family: var(--f900);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--m-color);
+}
+
+.carousel_bottom {
+    padding-bottom: 81px;
+    padding-top: 30px;
+}
+
+/* Info */
+
+.info__img {
+    position: relative;
+}
+
+.info__box {
+    position: absolute;
+    top: 0;
+}
+
+.info__btn {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: var(--f400);
+    padding: 24px 30px 23px 20px;
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.info {
+    padding: 77px 0 92px;
+}
+
+.info__rate {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0FDAC2;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    color: #ffffff;
+    font-family: var(--fi700);
+}
+
+.info__article {
+    padding: 28px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+}
+
+.info__text {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 25px 0;
+    margin-bottom: 0;
+}
+
+.info__text:last-of-type {
+    padding: 0 0 20px;
+}
+
+/* Accordion */
+
+.accordion_right {
+    margin-right: 30px;
+}
+
+.acc {
+    padding: 30px 0 75px;
 }
 
 /* Media */
@@ -118,5 +214,33 @@ ul {
 @media (max-width: 991px) {
     .nav-collapse {
         width: 100%;
+    }
+
+    .slider__col_order {
+        order: -1;
+    }
+
+    .carousel__parent {
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel__brands {
+        display: none;
+    }
+
+    .info__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .button {
+        font-size: 13px;
     }
 }
