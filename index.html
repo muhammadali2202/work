@@ -205,85 +205,139 @@
         <h2 class="title">capabilities</h2>
 
         <div class="acc w-100 d-flex flex-wrap justify-content-center">
-            <div class="col-6 d-flex align-items-center">
+            <div
+                class="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 d-flex align-items-center order-1 order-md-0 justify-content-center">
                 <div class="accordion w-100 accordion_right" id="accordionExample">
                     <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
-                                </button>
-                            </h2>
+                        <div class="card__header">
+                            <button class="btn w-100 d-flex justify-content-between card__btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#html" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <div class="btn__left d-flex align-items-center">
+                                    <i class="fab fa-html5 btn__icon"></i>
+                                    <span class="btn__text">HTML</span>
+                                </div>
+
+                                <i class="fas fa-caret-down btn__dropdown"></i>
+                            </button>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div id="html" class="collapse" data-parent="#accordionExample">
+                            <div class="card__body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget
+                                suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing
+                                ut. Convallis faucibus ligula blandit enim. Accumsan est
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Collapsible Group Item #2
-                                </button>
-                            </h2>
+                        <div class="card__header">
+                            <button class="btn w-100 d-flex justify-content-between card__btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#css" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <div class="btn__left d-flex align-items-center">
+                                    <i class="fab fa-css3-alt btn__icon"></i>
+                                    <span class="btn__text">CSS</span>
+                                </div>
+
+                                <i class="fas fa-caret-down btn__dropdown"></i>
+                            </button>
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                        <div id="css" class="collapse" data-parent="#accordionExample">
+                            <div class="card__body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget
+                                suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing
+                                ut. Convallis faucibus ligula blandit enim. Accumsan est
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    Collapsible Group Item #3
-                                </button>
-                            </h2>
+                        <div class="card__header">
+                            <button class="btn w-100 d-flex justify-content-between card__btn" type="button"
+                                data-toggle="collapse" data-target="#bootstrap" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <div class="btn__left d-flex align-items-center">
+                                    <i class="fab fa-bootstrap btn__icon"></i>
+                                    <span class="btn__text">BOOTSTRAP 5</span>
+                                </div>
+
+                                <i class="fas fa-caret-down btn__dropdown"></i>
+                            </button>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                        <div id="bootstrap" class="collapse show" data-parent="#accordionExample">
+                            <div class="card__body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget
+                                suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing
+                                ut. Convallis faucibus ligula blandit enim. Accumsan est
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-6 d-flex justify-content-center">
                 <img src="img/capabilities.png" alt="capabilities" class="w-100">
             </div>
         </div>
 
 
+    </div>
+
+    <!-- Works -->
+
+    <div class="works">
+        <div class="container">
+            <h2 class="title text-center">My Works</h2>
+
+            <div class="works__nav">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="works__link active" data-toggle="pill" href="#nike" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">NIKE</a>
+                            <a class="works__link" data-toggle="pill" href="#news" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">NEWS</a>
+                            <a class="works__link" data-toggle="pill" href="#blue" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">BLUE-MARKETING</a>
+                            <a class="works__link" data-toggle="pill" href="#boulevard" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">BOULEVARD</a>
+                            <a class="works__link" data-toggle="pill" href="#street88" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">STREET88</a>
+                            <a class="works__link" data-toggle="pill" href="#open" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">OPEN-SHOP</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active works__tab d-flex" id="nike" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <div class="col-4">
+                                    <img class="works__tab-img w-100" src="img/nike.jpg" alt="nike">
+                                </div>
+                                <div class="col-8">
+                                    <div class="works__tab-inner">
+                                        <h2 class="works__tab-title">NIKE Layout</h2>
+                                        <p class="works__tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus,
+                                            maecenas
+                                            et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi
+                                            id
+                                            amet, lorem vitae lectus risus diam
+                                        </p>
+                                        <p class="works__tab-text"> nunc. Eget nunc eget lectus amet feugiat lobortis
+                                            sit
+                                            sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                                        <a href="#" class="button">details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/bootstrap.min.js"></script>
